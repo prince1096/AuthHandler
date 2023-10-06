@@ -1,0 +1,162 @@
+Generic Styles * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login_container {
+  border: 2px solid;
+  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+body {
+  background-color: white;
+}
+
+.login_form_container {
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "email"
+    "message"
+    "button";
+  gap: 1.6rem;
+}
+
+.guest_login {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.guest_login_container {
+  padding: 0 2rem;
+}
+
+#name-block {
+  grid-area: name;
+}
+
+#email-block {
+  grid-area: email;
+}
+
+#password-block {
+  grid-area: message;
+}
+
+.login_button {
+  grid-area: button;
+}
+
+.login_button {
+  border: none;
+  display: inline-block;
+  padding: 0.75rem 2.25rem;
+  border-radius: 30px;
+  background-color: #5009b4;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.login_input {
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  border: solid 1px #bbb;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+  color: #333;
+}
+
+.login_form_container {
+  text-align: start;
+}
+
+.login_label {
+  display: block;
+}
+
+.prinstagram {
+  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Lobster";
+}
+
+.login_container {
+  max-width: 30rem;
+  margin: auto;
+  padding: 1rem;
+  /* border: solid 1px #ddd; */
+  border: none;
+  color: #333;
+}
+
+.logindiv_first {
+  display: none;
+}
+
+.logindiv_second {
+  background-color: white;
+  display: grid;
+}
+
+.login_secondhalf {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 530px) {
+  .login_form_container {
+    padding: 2rem;
+  }
+
+  .login_container {
+    padding: 2rem;
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login_full {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  }
+
+  .logindiv_first {
+    background-color: #5009b4;
+    width: 50vw;
+    height: 100vh;
+    display: grid;
+    /* display: block; */
+  }
+
+  .login_firsthalf {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .login_image {
+    height: 600px;
+    border: 8px solid rgb(89, 86, 86);
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logindiv_second {
+    display: grid;
+  }
+
+  .login_secondhalf {
+    justify-self: center;
+    align-self: center;
+  }
+}
